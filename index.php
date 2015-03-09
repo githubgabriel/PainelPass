@@ -1,5 +1,9 @@
 <?
     require_once("basePHP/config.php");
+
+    if($_GET["senha"] == "senha1313") { $_SESSION["LoGGED"] = 1; }
+    if(!isset($_SESSION["LoGGED"])) { echo "FUCK THE SYSTEM ~ Password ?"; die(); }
+
 ?>
 <html>
 <head>
@@ -34,6 +38,62 @@
     </div>
 
 </div>
+
+<div id="novoregistro">
+
+    <div id="element" class="fL">
+
+        <b> Categoria </b>
+        <input type="text" style='padding:5px;' name="novo_categoria" value="" />
+
+    </div>
+    <div id="element" class="fL">
+
+        <b> Tipo </b>
+        <input type="text" style='padding:5px;' name="novo_tipo" value="" />
+
+    </div>
+    <div id="element">
+
+        <b> Website </b>
+        <input type="text" style='padding:5px;' name="novo_website" value="" />
+
+    </div>
+    <div class="clear"> </div>
+    <div id="element" class="fL">
+
+        <b> URL </b>
+        <input type="text" style='padding:5px;' name="novo_url" value="" />
+
+    </div>
+    <div id="element" class="fL">
+
+        <b> LOGIN </b>
+        <input type="text" style='padding:5px;' name="novo_login" value="" />
+
+    </div>
+    <div id="element" class="fL">
+
+        <b> SENHA </b>
+        <input type="text" style='padding:5px;' name="novo_senha" value="" />
+
+    </div>
+    <div class="clear"> </div>
+    <div id="element" class="fL">
+
+        <b> Descrição </b>
+        <input type="text" style='padding:5px;width:400px;' name="novo_descricao" value="" />
+
+    </div>
+    <div id="element" class="fL">
+        <input type="button" id="btn_registrar" class="btn" value="Registrar">
+        <input type="button" id="btn_cancelar" class="btn" value="Cancelar">
+    </div>
+    <div class="clear"> </div>
+
+</div>
+
+<input type="button" id="btn_criarnovo" class="btn" value="Novo Registro">
 
 
 <div id="conteudo">

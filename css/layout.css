@@ -3,6 +3,8 @@
 body { font-family: "Courier New", Courier, monospace;  }
 
 .tac { text-align: center; }
+.fL { float:left; }
+.clear { clear:both; }
 
 #conteudo { margin: 15px; }
 
@@ -21,3 +23,11 @@ body { font-family: "Courier New", Courier, monospace;  }
 
 /* Filtros */
 #filtro { margin: 10px;}
+
+/* NovoRegistro */
+#novoregistro {  margin: 15px;  border: 1px solid #ccc; display:none;  }
+#element { margin:20px; }
+
+#btn_criarnovo { margin-left: 15px; }
+.btn { border: 1px solid #ccc; padding: 6px; background-color:whitesmoke; }
+.btn:hover { background-color:gray;color:white; cursor:pointer; }

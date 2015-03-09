@@ -4,6 +4,9 @@ class painelPass {
 
     static $tabela = "db_passwords";
 
+    static $categoria,$tipo,$website,$url,$login,$senha,$descricao;
+
+
     private function getFiltrosSession() {
         $ss = "";
         if($_SESSION["filtro_tipo"] or $_SESSION["filtro_categoria"] or $_SESSION["filtro_string"]) {
@@ -32,9 +35,24 @@ class painelPass {
         $sql = "select * from ".self::$tabela." $ff order by id desc";
         return $sql;
     }
+    private function getInsert() {
+        $sql = "insert into ".self::$tabela." (categoria,tipo,website,url,login,senha,descricao)";
+        $sql .= " values ('".self::$categoria."','".self::$tipo."','".self::$website."','".self::$url."','".self::$login."','".self::$senha."','".self::$descricao."') ";
+        return $sql;
+    }
+
     private function getSelectGroupBy($type) {
         $sql = "select * from ".self::$tabela." group by $type";
         return $sql;
+    }
+
+    public function save() {
+        $sql = self::getInsert();
+        if(conexao::query($sql)) {
+            return "Registrado com sucesso!";
+        } else {
+            return "Erro ao registrar!";
+        }
     }
 
     public function getInputSelect($type,$index) {

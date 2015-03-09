@@ -29,4 +29,24 @@ $(function() {
     }
 
 
+    /* Criar novo Registro */
+    var btn_criarnovo = $("input#btn_criarnovo");
+    var btn_registrar = $("input#btn_registrar");
+    var btn_cancelar = $("input#btn_cancelar");
+
+    var div_novoreg = $("div#novoregistro");
+
+    btn_registrar.on("click", function() {
+        var data = div_novoreg.find("input").serialize();
+        $.post("ajax/newReg.php", data, function(content) { alert(content); updateTable(); div_novoreg.find("input").not("input.btn").val(""); });
+    });
+
+    btn_criarnovo.on("click", function() {
+        div_novoreg.show(500);
+        btn_criarnovo.hide();
+    });
+    btn_cancelar.on("click", function() {
+        div_novoreg.hide(500);
+        btn_criarnovo.show();
+    });
 });
