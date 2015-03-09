@@ -1,0 +1,12 @@
+* { margin: 0; padding: 0; }
+
+body { font-family: "Courier New", Courier, monospace;  }
+
+#conteudo { margin: 30px; }
+#registros { width: 100%; font-size:12px; border: 1px solid #ccc; }
+#registros thead { background-color:black; color:white; }
+#registros thead tr td { text-align: center; padding: 5px; }
+#registros tbody tr td { text-align: center; padding: 5px; }
+#registros tbody tr td#pass { background-color: black; }
+#registros tbody tr:hover  { background-color: #e2e2e2; }
+#registros tbody tr:hover td#pass { background-color: white; }
