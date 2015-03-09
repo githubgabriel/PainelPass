@@ -28,8 +28,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08783784" vertical-offset="98" max-vertical-offset="690">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5827703" vertical-offset="0" max-vertical-offset="690">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -58,12 +58,12 @@
       <file leaf-file-name="painelpass.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basePHP/class/front/painelpass.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="630">
-              <caret line="27" column="41" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="41" />
+            <state vertical-scroll-proportion="-12.5" vertical-offset="300" max-vertical-offset="930">
+              <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
               <folding>
-                <marker date="1425912474000" expanded="true" signature="113:126" placeholder="select * fro..." />
-                <marker date="1425912474000" expanded="true" signature="113:127" placeholder="select * fro..self_tabela..." />
-                <marker date="1425912474000" expanded="true" signature="113:160" placeholder="select * fro..self_tabela..." />
+                <marker date="1425913714000" expanded="true" signature="113:126" placeholder="select * fro..." />
+                <marker date="1425913714000" expanded="true" signature="113:127" placeholder="select * fro..self_tabela..." />
+                <marker date="1425913714000" expanded="true" signature="113:160" placeholder="select * fro..self_tabela..." />
               </folding>
             </state>
           </provider>
@@ -72,8 +72,8 @@
       <file leaf-file-name="layout.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/layout.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -255,10 +255,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basePHP/config.php">
+    <entry file="file://$PROJECT_DIR$/css/layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="1110">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -273,28 +273,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basePHP/class/front/painelpass.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="630">
-          <caret line="27" column="41" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="41" />
+        <state vertical-scroll-proportion="-12.5" vertical-offset="300" max-vertical-offset="930">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
           <folding>
-            <marker date="1425912474000" expanded="true" signature="113:126" placeholder="select * fro..." />
-            <marker date="1425912474000" expanded="true" signature="113:127" placeholder="select * fro..self_tabela..." />
-            <marker date="1425912474000" expanded="true" signature="113:160" placeholder="select * fro..self_tabela..." />
+            <marker date="1425913714000" expanded="true" signature="113:126" placeholder="select * fro..." />
+            <marker date="1425913714000" expanded="true" signature="113:127" placeholder="select * fro..self_tabela..." />
+            <marker date="1425913714000" expanded="true" signature="113:160" placeholder="select * fro..self_tabela..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/layout.css">
+    <entry file="file://$PROJECT_DIR$/basePHP/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="1110">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08783784" vertical-offset="98" max-vertical-offset="690">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5827703" vertical-offset="0" max-vertical-offset="690">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding />
         </state>
       </provider>

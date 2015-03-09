@@ -16,13 +16,13 @@
     <table border="0" id="registros">
         <thead>
             <tr>
-                <td> ID </td>
-                <td> Categoria </td>
-                <td> Tipo </td>
-                <td> Website </td>
-                <td> URL </td>
-                <td> Login </td>
-                <td> Senha </td>
+                <td width="20"> ID </td>
+                <td width="90"> Categoria </td>
+                <td width="90"> Tipo </td>
+                <td width="180"> Website </td>
+                <td width="180"> URL </td>
+                <td width="180"> Login </td>
+                <td width="180"> Senha </td>
                 <td> Descrição </td>
             </tr>
         </thead>
