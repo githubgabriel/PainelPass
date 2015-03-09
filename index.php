@@ -9,11 +9,14 @@
 </head>
 <body>
 
+
+
 <div id="conteudo">
 
     <table border="0" id="registros">
         <thead>
             <tr>
+                <td> ID </td>
                 <td> Categoria </td>
                 <td> Tipo </td>
                 <td> Website </td>
@@ -25,29 +28,14 @@
         </thead>
 
         <tbody>
-            <tr>
-                <td> Categoria </td>
-                <td> Tipo </td>
-                <td> Website </td>
-                <td> URL </td>
-                <td> Login </td>
-                <td id="pass"> Senha </td>
-                <td> Descrição </td>
-            </tr>
-            <tr>
-                <td> Categoria </td>
-                <td> Tipo </td>
-                <td> Website </td>
-                <td> URL </td>
-                <td> Login </td>
-                <td id="pass"> Senha </td>
-                <td> Descrição </td>
-            </tr>
+
+            <?=painelPass::getTable();?>
+
         </tbody>
 
     </table>
 
-</div>
+</div> <!-- end conteudo -->
 
 </body>
 </html>
