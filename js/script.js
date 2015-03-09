@@ -47,9 +47,13 @@ $(function() {
 
     /* Deletar Registro dinamic ajax */
     var btn_deletar = $("a#btn_deletar");
-    $("table#registros").on("click", btn_deletar, function(e) {
-        var data = $("a#btn_deletar",this).data("id");
-        $.post("ajax/deleteReg.php", {id: data}, function(content) {  updateTable(); });
+    $("table#registros").on("click", "a#btn_deletar", function(e) {
+        var data = $(this).data("id");
+        if (confirm("Deseja realmente deletar ID: "+data+" ?")) {
+            $.post("ajax/deleteReg.php", {id: data}, function (content) {
+                updateTable();
+            });
+        }
     });
-    
+
 });

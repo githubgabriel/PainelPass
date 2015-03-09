@@ -31,3 +31,6 @@ body { font-family: "Courier New", Courier, monospace;  }
 #btn_criarnovo { margin-left: 15px; }
 .btn { border: 1px solid #ccc; padding: 6px; background-color:whitesmoke; }
 .btn:hover { background-color:gray;color:white; cursor:pointer; }
+
+/* delete registro */
+#btn_deletar { color:white; text-decoration:none; cursor: crosshair; }
