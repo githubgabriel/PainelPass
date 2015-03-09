@@ -41,6 +41,11 @@ class painelPass {
         return $sql;
     }
 
+    private function getDelete($reg) {
+        $sql = "delete from ".self::$tabela." where id = '$reg'";
+        return $sql;
+    }
+
     private function getSelectGroupBy($type) {
         $sql = "select * from ".self::$tabela." group by $type";
         return $sql;
@@ -50,6 +55,15 @@ class painelPass {
         $sql = self::getInsert();
         if(conexao::query($sql)) {
             return "Registrado com sucesso!";
+        } else {
+            return "Erro ao registrar!";
+        }
+    }
+
+    public function delete($red) {
+        $sql = self::getDelete($red);
+        if(conexao::query($sql)) {
+            return "Deletado com sucesso!";
         } else {
             return "Erro ao registrar!";
         }
@@ -81,7 +95,7 @@ class painelPass {
             for ($i = 0; $i < $num; $i++) {
                 $saida .= "<tr>";
                 $aw = conexao::fetch_array($re);
-                $saida .= "<td class='tac' id='id'>".$aw["id"]."</td>";
+                $saida .= "<td class='tac' id='id'> <a href='javascript:void(0);return false;' id='btn_deletar' data-id='".$aw["id"]."'>".$aw["id"]."</a> </td>";
                 $saida .= "<td class='tac'>".$aw["categoria"]."</td>";
                 $saida .= "<td class='tac'>".$aw["tipo"]."</td>";
                 $saida .= "<td>".$aw["website"]."</td>";

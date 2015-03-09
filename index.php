@@ -11,6 +11,7 @@
     <title>KeyPass</title>
     <link href="css/layout.css" type="text/css" rel="stylesheet" />
     <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 
@@ -114,7 +115,6 @@
 
         <tbody>
 
-            <?=painelPass::getTable();?>
 
         </tbody>
 
@@ -122,7 +122,7 @@
 
 </div> <!-- end conteudo -->
 
-<script src="js/script.js"></script>
+<script> updateTable(); </script>
 
 </body>
 </html>
