@@ -17,3 +17,7 @@ body { font-family: "Courier New", Courier, monospace;  }
 #registros tbody tr td#pass { background-color: black; }
 #registros tbody tr:hover  { background-color: #e2e2e2; }
 #registros tbody tr:hover td#pass { background-color: white; }
+
+
+/* Filtros */
+#filtro { margin: 10px;}

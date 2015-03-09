@@ -4,16 +4,35 @@ class painelPass {
 
     static $tabela = "db_passwords";
 
+    private function getFiltrosSession() {
+        $ss = "";
+        if($_SESSION["filtro_tipo"] or $_SESSION["filtro_categoria"]) {
+            $ss .= " where ";
+            if($_SESSION["filtro_tipo"]) {
+                $ss .= " tipo = '".$_SESSION["filtro_tipo"]."' and";
+            }
+            if($_SESSION["filtro_categoria"]) {
+                $ss .= " categoria = '".$_SESSION["filtro_categoria"]."' and";
+            }
+            $ss = substr($ss, 0, -3);
+        }
+        return $ss;
+    }
     private function getSelect() {
-        $sql = "select * from ".self::$tabela." order by id asc";
+        $ff = self::getFiltrosSession();
+        $sql = "select * from ".self::$tabela." $ff order by id desc";
+        return $sql;
+    }
+    private function getSelectGroupBy($type) {
+        $sql = "select * from ".self::$tabela." group by $type";
         return $sql;
     }
 
     public function getInputSelect($type,$index) {
-        $sql = self::getSelect();
+        $sql = self::getSelectGroupBy($type);
         $re = conexao::query($sql);
         $num = conexao::num_rows($re);
-        $saida = "<option value=''> Nenhum </option>";
+        $saida = "<option value=''> Todos </option>";
         if($num and $type) {
             for ($i = 0; $i < $num; $i++) {
                 $aw = conexao::fetch_array($re);
