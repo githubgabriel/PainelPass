@@ -6,13 +6,22 @@ class painelPass {
 
     private function getFiltrosSession() {
         $ss = "";
-        if($_SESSION["filtro_tipo"] or $_SESSION["filtro_categoria"]) {
+        if($_SESSION["filtro_tipo"] or $_SESSION["filtro_categoria"] or $_SESSION["filtro_string"]) {
             $ss .= " where ";
             if($_SESSION["filtro_tipo"]) {
                 $ss .= " tipo = '".$_SESSION["filtro_tipo"]."' and";
             }
             if($_SESSION["filtro_categoria"]) {
                 $ss .= " categoria = '".$_SESSION["filtro_categoria"]."' and";
+            }
+            if($_SESSION["filtro_string"]) {
+                $ss .= " website LIKE '%".$_SESSION["filtro_string"]."%' or";
+                $ss .= " login LIKE '%".$_SESSION["filtro_string"]."%' or";
+                $ss .= " senha LIKE '%".$_SESSION["filtro_string"]."%' or";
+                $ss .= " descricao LIKE '%".$_SESSION["filtro_string"]."%' or";
+                $ss .= " tipo LIKE '%".$_SESSION["filtro_string"]."%' or";
+                $ss .= " categoria LIKE '%".$_SESSION["filtro_string"]."%' or";
+                $ss .= " url LIKE '%".$_SESSION["filtro_string"]."%' and";
             }
             $ss = substr($ss, 0, -3);
         }
@@ -49,7 +58,6 @@ class painelPass {
         $sql = self::getSelect();
         $re = conexao::query($sql);
         $num = conexao::num_rows($re);
-
         if($num) {
             $saida = "";
             for ($i = 0; $i < $num; $i++) {

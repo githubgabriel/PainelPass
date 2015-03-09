@@ -3,6 +3,7 @@ $(function() {
 
     /* FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS FILTROS */
 
+    var filtro_string = $("input[name=filtro_string]");
     var filtro_tipo = $("select[name=filtro_tipo]");
     var filtro_categoria = $("select[name=filtro_categoria]");
 
@@ -10,9 +11,12 @@ $(function() {
         $.post("ajax/setFiltro.php", { id: "tipo", valor: this.value }, function() { updateTable(); });
     });
 
-
     filtro_categoria.on("change", function() {
         $.post("ajax/setFiltro.php", { id: "categoria", valor: this.value }, function() { updateTable(); });
+    });
+
+    filtro_string.on("keyup", function() {
+        $.post("ajax/setFiltro.php", { id: "string", valor: this.value }, function() { updateTable(); });
     });
 
 

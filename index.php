@@ -25,6 +25,14 @@
             <?=painelPass::getInputSelect("tipo", $_SESSION["filtro_tipo"]);?>
         </select>
     </div>
+
+
+    <div id="filtro">
+        <b> Filtro Texto </b>
+        <input type="text" style='padding:5px;' name="filtro_string" value="<?=$_SESSION["filtro_string"];?>" />
+
+    </div>
+
 </div>
 
 
