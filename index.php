@@ -1,5 +1,5 @@
 <?
-
+    require_once("basePHP/config.php");
 ?>
 <html>
 <head>

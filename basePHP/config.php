@@ -69,6 +69,7 @@ require "class/mysqltools.class.php";
 
 
 /* Inicia classes voltada para SITE/FRONT */
-require "class/front/curriculo.class.php";
+//require "class/front/curriculo.class.php";
+//require "class/front/keypass.class.php";
 
 ?>
