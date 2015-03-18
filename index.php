@@ -1,4 +1,6 @@
 <?
+    define("_VERSION", "V1.1 by Gabriel");
+
     require_once("basePHP/config.php");
 
     if($_GET["senha"] == "senha1313") { $_SESSION["LoGGED"] = 1; }
@@ -8,7 +10,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>KeyPass</title>
+    <title>Passwords</title>
     <link href="css/layout.css" type="text/css" rel="stylesheet" />
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/script.js"></script>
@@ -20,6 +22,8 @@
 ▒█▀▀█ ░█▀▀█ ▒█▀▀▀█ ▒█▀▀▀█ ▒█░░▒█ ▒█▀▀▀█ ▒█▀▀█ ▒█▀▀▄ 　 ▒█▀▀▄ ▒█▀▀█
 ▒█▄▄█ ▒█▄▄█ ░▀▀▀▄▄ ░▀▀▀▄▄ ▒█▒█▒█ ▒█░░▒█ ▒█▄▄▀ ▒█░▒█ 　 ▒█░▒█ ▒█▀▀▄
 ▒█░░░ ▒█░▒█ ▒█▄▄▄█ ▒█▄▄▄█ ▒█▄▀▄█ ▒█▄▄▄█ ▒█░▒█ ▒█▄▄▀ 　 ▒█▄▄▀ ▒█▄▄█
+
+  <small> <?=_VERSION?> </small>
 
 </pre>
 
